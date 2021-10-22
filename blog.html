@@ -106,18 +106,77 @@ permalink: /blog.html
 </div>
             
                     </header>
-        <div class="block contact_form" id="contact_form">
-    <div class="center">
-        <div class="block__title wow flipInX" data-wow-delay="0.1s">
-            Blog
-        </div>
-        <div class="block__subtitle_bottom wow flipInX" data-wow-delay="0.2s">
-            <p class="block__subtitle_bottom">WIP. Please comeback later..</p>
-            <p>Please <a href="/">click here</a> to go to the home page.</p>
-        </div>
+                                <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', (event) => {
+        // below was: pre code -> code
+        document.querySelectorAll('code').forEach((block) => {
+            hljs.highlightBlock(block);
+        });
+        // var y = document.querySelectorAll("pre code");
+        // for (var i = 0; i < y.length; i++) {
+        //   y[i].innerHTML = y[i].innerHTML.replace("\n", "");
+        // }
+    });
+</script><div class="block" id="nexssPage">
+  <div class="center">
+    <div class="row">
+      <div class="column1">
+                <h2>Welcome</h2>
+        <ul>
+                    <li><a href="0_Welcome/news/blog.html">News</a></li>
+                  </ul> 
+              </div>
+      <div class="column2">
+        <h1>News</h1>
+<h2>Welcome to my blog</h2>
+<p><span style="color:#4e8800;margin-bottom:10px;margin-top:-5px;font-weight:bold;">October 21st, 2021</span></p>
+<p>Hello Folks!<br>
+Because the traffic of this website went up, I have decided to start writing a blog for you.<br>
+You will find here interesting articles about <strong>programming</strong>, <strong>music producing</strong> and <strong>3D</strong>.</p>
+      </div>
     </div>
+  </div>
+  <style>
+.column1 h2 {
+  
+  margin:0;
+  padding:0;
+  color: #2124ff;
+}
+
+.column1 {
+  float: left;
+  width: 20%;
+}
+
+.column2 {
+  float: left;
+  width: 80%;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+<script>
+    var links = document.links;
+
+for (var i = 0, linksLength = links.length; i < linksLength; i++) {
+  if (links[i].hostname != window.location.hostname) {
+    links[i].target = "_blank";
+  }
+}
+
+</script>
 </div>
-        <!-- footer -->
+        
+                <!-- footer -->
         <footer class="footer">
             <div class="footer__top">
     <div class="center clearfix">
