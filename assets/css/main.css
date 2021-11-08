@@ -90,10 +90,15 @@ input {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  /* font-size: 100%; */
   vertical-align: baseline;
   font-weight: normal;
 }
+
+html {
+  font-size: calc(1em + 1vw);
+}
+
 b,
 strong {
   font-weight: bold;
@@ -339,8 +344,8 @@ body a {
   text-transform: uppercase;
   text-align: center;
   color: #2ab5f6;
-  font-size: 12px;
-  line-height: 14px;
+  /* font-size: 12px; 
+  line-height: 14px;*/
   margin-bottom: 6px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -350,31 +355,35 @@ body a {
 h1,
 h2 {
   text-align: center;
-  font-size: 60px;
-  line-height: 70px;
+  /* font-size: 60px;
+  line-height: 70px; */
   color: #18213d;
+  margin-top: 10px;
   margin-bottom: 20px;
   font-family: "Montserrat", sans-serif;
   font-weight: 200;
 }
 
-h2 {
-  font-size: 50px;
+code {
+  margin: 10px 0 20px 0;
+  font-size: 0.7em;
 }
 
+/* h2 {
+  font-size: 50px;
+} */
+
 @media screen and (max-width: 767px) {
-  .block__title,
-  h1 {
+  .block__title,/* h1 {
     font-size: 50px;
     line-height: 60px;
-  }
+  } */;
 }
 @media screen and (max-width: 767px) {
-  .block__title,
-  h1 {
+  .block__title,/* h1 {
     font-size: 36px;
     line-height: 42px;
-  }
+  } */;
 }
 .block__subtitle_bottom {
   text-align: center;
@@ -1916,4 +1925,28 @@ h2 {
   clear: both;
 }
 @media screen and (max-width: 1150px) and (min-width: 768px) {
+}
+
+.lighter .item__list {
+  color: white;
+}
+
+.lighter h1 {
+  color: #faa025;
+}
+.lighter h2 {
+  color: #fec600;
+}
+
+.lighter a:visited,
+a:link {
+  color: #fec600;
+}
+
+.lighter a:hover {
+  color: #eea600;
+}
+
+.lighter a {
+  text-decoration: underline;
 }
