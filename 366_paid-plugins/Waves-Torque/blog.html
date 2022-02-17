@@ -1,6 +1,6 @@
 ---
-title: "BLOG Bitwig Studio - Bitwig VST Video Player"
-permalink: /333_blog-bitwig-studio/bitwig-VST-video-player/blog.html
+title: "BLOG Paid Plugins - Waves Torque"
+permalink: /366_paid-plugins/Waves-Torque/blog.html
 ---
 <!DOCTYPE html><html lang="en"><head><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-54906104-1"></script>
 <script>
@@ -9,12 +9,12 @@ permalink: /333_blog-bitwig-studio/bitwig-VST-video-player/blog.html
     gtag('js', new Date());
     gtag('config', 'UA-54906104-1');
 </script>
-<title>BLOG Bitwig Studio - Bitwig VST Video Player</title>
+<title>BLOG Paid Plugins - Waves Torque</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="keywords" content="blog, tips and tricks,blender,programming,music production">
-<meta name="description" content="Bitwig VST Video Player - Nexss Programmer Blog">
+<meta name="description" content="Waves Torque - Nexss Programmer Blog">
 <base href="/">
 <link rel="stylesheet" href="assets/css/animate.css">
 <link rel="stylesheet" href="assets/css/font-awesome.min.css">
@@ -27,7 +27,7 @@ permalink: /333_blog-bitwig-studio/bitwig-VST-video-player/blog.html
 <script src="assets/js/wow.min.js"></script>
 <script src="assets/js/myscript.js"></script>
 <script src="assets/js/jquery.fancybox.min.js"></script>
-<meta property="og:description" content="BLOG Bitwig Studio - Bitwig VST Video Player">
+<meta property="og:description" content="BLOG Paid Plugins - Waves Torque">
 <meta property="og:description" content="Unique Beats, Music">
 <meta property="og:image" content="https://marcinpolak.eu/assets/images/avatar_mapo.jpg">
 <meta property="og:url" content="https://marcinpolak.eu">
@@ -144,50 +144,11 @@ permalink: /333_blog-bitwig-studio/bitwig-VST-video-player/blog.html
                   </ul> 
               </div>
       <div class="column2">
-        <h1>Bitwig VST Video Player</h1>
-<p>This article won't be about 'how to make <strong>VST</strong> to sync videos using VST', but rather work around how to make it work in <strong>Bitwig Studio</strong> (and also in another DAW).</p>
-<h2>Setup Environment (Windows)</h2>
-<p>Please remember to <em>check licenses</em> of that great software before use them.
-<br><br></p>
-<ul>
-<li><a href="https://www.tobias-erichsen.de/software/loopmidi.html">Download</a> and install <a href="https://www.tobias-erichsen.de/software/loopmidi.html">loopMidi</a> by Tobias Erichsen.</li>
-<li><a href="http://xjadeo.sourceforge.net/download.html">Download</a> and install <a href="https://github.com/x42/xjadeo">xjadeo</a> <em>video player</em>.</li>
-</ul>
-<p><br></p>
-<ul>
-<li>Run xJadeo from command line:</li>
-</ul>
-<pre><code class="language-sh">"C:\Program Files\xjadeo\xjadeo.exe" -S -a -i 3 --midi-driver portmidi -m -1</code></pre>
-<p>more options on xjadeo <a href="http://xjadeo.sourceforge.net/xjadeo.html">cli arguments - here</a>.</p>
-<p><br></p>
-<p>Right Click and <strong>File</strong>-&gt;<strong>Open</strong> or <strong>CTRL+O</strong> and select your <strong>video</strong>.</p>
-<h2>Start - Synchronize Video with Bitwig Studio</h2>
-<ol>
-<li>
-<p>Start the <strong>loopMidi</strong> and create new Loopback Midi Port and name it for example "myMidiLoopback"</p>
-<p><br></p>
-</li>
-<li>
-<p>Drag and Drop the Video in the Bitwig (It will extract audio and place in the (best) Audio Track). Then change the audio clip to raw (select the Audio clip you just imported and in the Audio Event Properties -&gt; MODE change from <strong>Stretch</strong> to <strong>Raw</strong>)</p>
-<p><br></p>
-</li>
-<li>
-<p>Go to the <strong>Bitwig Studio</strong>-&gt;<strong>Settings</strong>-&gt;<strong>Synchronization</strong> and click on <strong>MTC</strong> for "myMidiLoopback".</p>
-</li>
-<li>
-<p>Now start playing music in the Bitwig Studio and you can see that video is synchronized.
-<br>
-<span style="color:green;">
-<strong>NOTE</strong> If it is still not playing with bitwig you may need to look at xjadeo starting. For example change from -m -1 (autodetect) to different number: -m 3 (when -1 didn't work)
-</span></p>
-<p><br></p>
-</li>
-</ol>
-<p><em>note:</em> You can make the <strong>video player</strong> window stay on top <strong>Right Click-&gt;Display-&gt;On Top</strong> or using short cut <strong>SHIFT+A</strong> (keep pressed bit longer as short may not work.)</p>
-<p><em>note 2:</em> You can shrink the video for a better performance using <strong>ffmpeg</strong>. For example:</p>
-<pre><code class="language-sh"># shrink your video to one quarter size. Change 8 to 4 for half size.
-ffmpeg -i yourvideo.mp4 -vf "scale=trunc(iw/8)*2:trunc(ih/8)*2" -vcodec h264 -acodec aac -crf 28 a_fourth_the_frame_size.mkv</code></pre>
-<p>So without extra <strong>VST</strong> plugins you can synchronize videos using just <strong>video player</strong> and MIDI.</p>
+        <h1>Torque / Waves</h1>
+<p><strong>VST Effect</strong></p>
+<p>Great Plugin for enhancing your drums, specialy for snares. You can make fatter and much better sounding snares with this plugin.</p>
+<p><img src="images\paid-vst-plugins\Waves-Torque.jpg" alt="Waves - Torque"></p>
+<p>More at the <strong>Waves</strong> website (including great tutorials): <a href="https://www.waves.com/plugins/torque">www.waves.com</a></p>
       </div>
     </div>
   </div>
